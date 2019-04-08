@@ -33,3 +33,4 @@
 /Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Students/Details.g.cshtml.cs
 /Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Students/Edit.g.cshtml.cs
 /Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Students/Index.g.cshtml.cs
+/Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/About.g.cshtml.cs
