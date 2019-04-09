@@ -34,3 +34,8 @@
 /Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Students/Edit.g.cshtml.cs
 /Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Students/Index.g.cshtml.cs
 /Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/About.g.cshtml.cs
+/Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Courses/Create.g.cshtml.cs
+/Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Courses/Delete.g.cshtml.cs
+/Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Courses/Details.g.cshtml.cs
+/Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Courses/Edit.g.cshtml.cs
+/Users/kyle/Documents/Dev/Projects/ContosoUniversity/obj/Debug/netcoreapp2.2/Razor/Pages/Courses/Index.g.cshtml.cs

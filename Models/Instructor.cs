@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ContosoUniversity.Models
 {
-    public class Student
+    public class Instructor
     {
         public int ID { get; set; }
 
@@ -16,32 +16,24 @@ namespace ContosoUniversity.Models
         public string LastName { get; set; }
 
         [Required]
-        [Display(Name = "First Name")]
         [Column("FirstName")]
+        [Display(Name = "First Name")]
         [StringLength(50)]
         [RegularExpression(@"^[A-Z]+[a-zA-Z""'\s-]*$", ErrorMessage = "Please capitalize name.")]
         public string FirstMidName { get; set; }
-        
-        [Display(Name = "Enrollment Date")]
+
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM/dd/yyyy}")]
-        public DateTime EnrollmentDate { get; set; }
-        
-        [Display(Name = "Email Address")]
-        [DataType(DataType.EmailAddress)]
-        public string EmailAddress {get;set;}
+        [Display(Name = "Hire Date")]
+        public DateTime HireDate { get; set; }
 
         [Display(Name = "Full Name")]
         public string FullName
         {
-            get
-            {
-                return LastName + ", " + FirstMidName;
-            }
+            get { return LastName + ", " + FirstMidName; }
         }
 
-        public ICollection<Enrollment> Enrollments { get; set; }
-
-        
+        public ICollection<CourseAssignment> CourseAssignments { get; set; }
+        public OfficeAssignment OfficeAssignment { get; set; }
     }
 }

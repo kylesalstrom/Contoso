@@ -55,8 +55,8 @@ namespace ContosoUniversity.Pages
             }
 
             var gpa = completedGrades.Select(x => (int)x.Grade.GetValueOrDefault()).Average();
-            string modifier = gpa % 1 > 0.6 ? "+" : gpa % 1 < 0.4 ? "-" : string.Empty;
-            switch((int)Math.Floor(gpa))
+            string modifier = gpa % 1 >= 0.75 ? "-" : gpa % 1 >= 0.5 ? "-" : string.Empty;
+            switch((int)Math.Floor(gpa+0.25))
             {
                 case 4:
                     return $"A{modifier}";
