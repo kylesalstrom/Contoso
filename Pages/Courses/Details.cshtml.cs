@@ -2,10 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ContosoUniversity.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
-using ContosoUniversity.Models;
 
 namespace ContosoUniversity.Pages.Courses
 {
@@ -28,7 +28,9 @@ namespace ContosoUniversity.Pages.Courses
             }
 
             Course = await _context.Courses
-                .Include(c => c.Department).FirstOrDefaultAsync(m => m.CourseID == id);
+                .AsNoTracking()
+                .Include(c => c.Department)
+                .FirstOrDefaultAsync(m => m.CourseID == id);
 
             if (Course == null)
             {
